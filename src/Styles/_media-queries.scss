@@ -1,0 +1,429 @@
+@import 'mixins';
+@media only screen and (min-width: 320px) and (max-width: 480px) {
+    *{
+        .App{
+            #navigation{
+                #toggleNav{
+                    font-size: 1.3rem;
+                    grid-area: 1 / 1 / span 2 / span 10;
+                }
+                @keyframes dropDown {
+                    0% {
+                        transform: translateY(40%);
+                        opacity: 0%;
+                    }
+                    100% {
+                        transform: translateY(65%);
+                        opacity: 100%;
+                    }
+                }
+                #navLinks{
+                    animation: 0.5s ease-in-out 0s 1 dropDown;
+                    @include grid(100%,repeat(4,25%));
+                    @include widthAndHeight(50%,30%);
+                    transform: translateY(65%);
+                    text-align: center;
+                    position: fixed;
+                    border: solid 1px black;
+                    border-radius:5px;
+                    grid-area: 1 / 4 / span 2 / span 5;
+                    font-size: 1.2rem;
+                    background-color: whitesmoke;
+                }
+                #langToggle{
+                    @include widthAndHeight(120%,80%);
+                    grid-area: 1 / 18 / span 2 / span 2;
+                }
+            }
+            #title{
+                #titleContent{
+                    @include widthAndHeight(80%,40%);
+                    font-size: 3rem;
+                }
+            }
+            #personal{
+                #personalContent{
+                    @include widthAndHeight(90%,80%);
+                    @include grid(100%, 20% 80%);
+                    #personalTitle{
+                        font-size: 2.5rem;
+                    }
+                    #personalText{
+                        font-size: 1.4rem;
+                    }
+                }
+            }
+            #skills{
+                #skillsContent{
+                    @include widthAndHeight(90%,90%);
+                    #skillsTitle{
+                        font-size: 1.7rem;
+                    }
+                    #technologies{
+                        grid-template-columns: repeat(2,50%);
+                        row-gap: 5%;
+                        overflow: scroll;
+                        .skillsElement{
+                            .icon {
+                                @include widthAndHeight(100%, 80%);
+                            }
+                            .skillsText{
+                                font-size: 1.2rem;
+                            }
+                        }
+                    }
+                }
+            }
+            #projects{
+                #projectsTitle{
+                    font-size:3rem;
+                }
+                #projectsContent{
+                    .projectsSlider{
+                        @include widthAndHeight(80%,70%);
+                        .project{
+                            .projectLink{
+                                grid-area: 4 / 1 / span 16 / span 20;
+                            }
+                            .projectTitle{
+                                font-size: 1.5rem;
+                                grid-area: 1 / 1 / span 3 / span 20;
+                            }
+                            .githubLink{
+                                grid-area: 5 / 8 / span 2 / span 6;
+                            }
+                            .projectIcon{
+                                @include widthAndHeight(100%,100%);
+                            }
+                        }
+                    }
+                }
+            }
+            #contact{
+                #contactsContent{
+                    #email{
+                        grid-area: 2 / 9 / span 1 / span 5;
+                    }
+                    #github{
+                        grid-area: 2 / 1 / span 1 / span 7;
+                    }
+                    #codewars{
+                        grid-area: 2 / 16 / span 1 / span 7;
+                    }
+                    .linkLabel{
+                        font-size: 1.2rem;
+                    }
+                    .linkIcon{
+                        object-fit: contain;
+                        font-size: 1.5rem;  
+                    }
+                }
+            }
+        }
+    }
+}
+@media only screen and (min-width: 481px) and (max-width: 768px) {
+    *{
+        .App{
+            #navigation{
+                #toggleNav{
+                    font-size: 1.3rem;
+                    grid-area: 1 / 1 / span 2 / span 6;
+                }
+                @keyframes dropDown {
+                    0% {
+                        transform: translateY(40%);
+                        opacity: 0%;
+                    }
+                    100% {
+                        transform: translateY(65%);
+                        opacity: 100%;
+                    }
+                }
+                #navLinks{
+                    animation: 0.5s ease-in-out 0s 1 dropDown;
+                    @include grid(100%,repeat(4,25%));
+                    @include widthAndHeight(40%,30%);
+                    transform: translateY(65%);
+                    text-align: center;
+                    position: fixed;
+                    border: solid 1px black;
+                    border-radius:5px;
+                    grid-area: 1 / 4 / span 2 / span 5;
+                    font-size: 1.2rem;
+                    background-color: whitesmoke;
+                }
+                #langToggle{
+                    @include widthAndHeight(80%,80%);
+                    grid-area: 1 / 19 / span 2 / span 2;
+                }
+            }
+            #title{
+                #titleContent{
+                    @include widthAndHeight(80%,40%);
+                    font-size: 3.5rem;
+                }
+            }
+            #personal{
+                #personalContent{
+                    @include widthAndHeight(80%,80%);
+                    @include grid(100%, 20% 80%);
+                    #personalTitle{
+                        font-size: 2.5rem;
+                    }
+                    #personalText{
+                        font-size: 1.5rem;
+                    }
+                }
+            }
+            #skills{
+                #skillsContent{
+                    @include widthAndHeight(90%,90%);
+                    #skillsTitle{
+                        font-size: 2rem;
+                    }
+                    #technologies{
+                        grid-template-columns: repeat(3,30%);
+                        grid-column-gap: 5%;
+                        row-gap: 5%;
+                        overflow: scroll;
+                        .skillsElement{
+                            .icon {
+                                @include widthAndHeight(100%, 80%);
+                            }
+                            .skillsText{
+                                font-size: 1.2rem;
+                            }
+                        }
+                    }
+                }
+            }
+            #projects{
+                #projectsTitle{
+                    font-size: 3rem;
+                }
+                #projectsContent{
+                    .projectsSlider{
+                        @include widthAndHeight(80%,70%);
+                        .project{
+                            .projectLink{
+                                grid-area: 4 / 1 / span 16 / span 20;
+                            }
+                            .projectTitle{
+                                font-size: 1.7rem;
+                            }
+                            .githubLink{
+                                font-size: 1rem;
+                            }
+                        }
+                    }
+                }
+            }
+            #contact{
+                #contactsContent{
+                    #email{
+                        grid-area: 2 / 9 / span 1 / span 5;
+                    }
+                    #github{
+                        grid-area: 2 / 3 / span 1 / span 6;
+                    }
+                    #codewars{
+                        grid-area: 2 / 15 / span 1 / span 6;
+                    }
+                    .linkLabel{
+                        font-size: 1.4rem;
+                    }
+                    .linkIcon{
+                        object-fit: contain;
+                        font-size: 1.5rem;  
+                    }
+                }
+            }
+        }
+    }
+
+}
+@media only screen and (min-width: 769px) and (max-width: 992px) {
+    *{
+        .App{
+            #navigation{
+                #toggleNav{
+                    font-size: 1.3rem;
+                    grid-area: 1 / 1 / span 2 / span 4;
+                }
+                #navLinks{
+                    grid-area: 1 / 6 / span 2 / span 10;
+                    font-size: 1.2rem;
+                }
+                #langToggle{
+                    @include widthAndHeight(60%,80%);
+                    grid-area: 1 / 19 / span 2 / span 2;
+                }
+            }
+            #title{
+                #titleContent{
+                    @include widthAndHeight(60%,40%);
+                    font-size: 4rem;
+                }
+            }
+            #personal{
+                #personalContent{
+                    @include widthAndHeight(80%,80%);
+                    #personalTitle{
+                        font-size: 3rem;
+                    }
+                    #personalText{
+                        font-size: 1.8rem;
+                    }
+                }
+            }
+            #skills{
+                #skillsContent{
+                    @include widthAndHeight(90%,90%);
+                    #skillsTitle{
+                        font-size: 2rem;
+                    }
+                    #technologies{
+                        grid-template-columns: repeat(4,23%);
+                        grid-column-gap: 3%;
+                        row-gap: 5%;
+                        overflow: scroll;
+                        .skillsElement{
+                            .icon {
+                                @include widthAndHeight(100%, 80%);
+                            }
+                            .skillsText{
+                                font-size: 1.3rem;
+                            }
+                        }
+                    }
+                }
+            }
+            #projects{
+                #projectsTitle{
+                    font-size: 3rem;
+                }
+                #projectsContent{
+                    .projectsSlider{
+                        .project{
+                            .projectLink{
+                                grid-area: 4 / 1 / span 16 / span 20;
+                            }
+                            .projectTitle{
+                                font-size: 1.9rem;
+                            }
+                            .projectIcon{
+                                @include widthAndHeight(100%,100%);
+                            }
+                        }
+                    }
+                }
+            }
+            #contact{
+                #contactsContent{
+                    #email{
+                        grid-area: 2 / 9 / span 1 / span 4;
+                    }
+                    #github{
+                        grid-area: 2 / 4 / span 1 / span 4;
+                    }
+                    #codewars{
+                        grid-area: 2 / 15 / span 1 / span 4;
+                    }
+                }
+            }
+        }
+    }
+
+}
+@media only screen and (min-width: 993px) and (max-width: 1200px) {
+    *{
+        .App{
+            #navigation{
+                #toggleNav{
+                    font-size: 1.3rem;
+                    grid-area: 1 / 1 / span 2 / span 3;
+                }
+                #navLinks{
+                    grid-area: 1 / 5 / span 2 / span 8;
+                    font-size: 1.2rem;
+                }
+                #langToggle{
+                    @include widthAndHeight(80%,80%);
+                    grid-area: 1 / 20 / span 2 / span 2;
+                }
+            }
+            #title{
+                #titleContent{
+                    @include widthAndHeight(50%,40%);
+                    font-size: 5rem;
+                }
+            }
+            #personal{
+                #personalContent{
+                    @include widthAndHeight(80%,80%);
+                    #personalTitle{
+                        font-size: 3rem;
+                    }
+                    #personalText{
+                        font-size: 2rem;
+                    }
+                }
+            }
+            #skills{
+                #skillsContent{
+                    @include widthAndHeight(90%,90%);
+                    #skillsTitle{
+                        font-size: 2rem;
+                    }
+                    #technologies{
+                        grid-template-columns: repeat(4,23%);
+                        grid-column-gap: 3%;
+                        row-gap: 5%;
+                        overflow: scroll;
+                        .skillsElement{
+                            .icon {
+                                @include widthAndHeight(100%, 80%);
+                            }
+                            .skillsText{
+                                font-size: 1.5rem;
+                            }
+                        }
+                    }
+                }
+            }
+            #contact{
+                #contactsContent{
+                    #email{
+                        grid-area: 2 / 10 / span 1 / span 4;
+                    }
+                    #github{
+                        grid-area: 2 / 4 / span 1 / span 4;
+                    }
+                    #codewars{
+                        grid-area: 2 / 15 / span 1 / span 4;
+                    }
+                }
+            }
+        }
+    }
+}
+@media only screen and (min-width: 1201px) and (max-width: 1600px) {
+    *{
+        .App{
+            #navigation{
+                #toggleNav{
+                    font-size: 1.3rem;
+                    grid-area: 1 / 1 / span 2 / span 3;
+                }
+                #navLinks{
+                    grid-area: 1 / 5 / span 2 / span 7;
+                    font-size: 1.2rem;
+                }
+                #langToggle{
+                    grid-area: 1 / 20 / span 2 / span 1;
+                }
+            }
+        }
+    }
+}

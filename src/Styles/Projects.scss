@@ -1,0 +1,59 @@
+@import 'mixins';
+#projects{
+    @include widthAndHeight(100%,100vh);
+    background-color: blueviolet ;
+    padding-top: 1%;
+    font-family: 'Quicksand', sans-serif;
+    #projectsTitle{
+        @include widthAndHeight(100%,10%);
+        @include flex(center,center);
+        font-size: 3.5rem;
+        color: white
+    }
+    #projectsContent{
+        @include widthAndHeight(100%,90%);
+        @include flex(center,center);
+        margin: auto;
+        .projectsSlider{
+            @include widthAndHeight(80%,95%);
+            box-shadow: 5px 10px 10px rgba(0, 0, 0, 0.5);
+            .project{
+                @include widthAndHeight(100%,100%);
+                @include grid(repeat(20,5%),repeat(20,5%));
+                border-radius: 5px;
+                background-color: white;
+                .projectLink{
+                    @include widthAndHeight(100%,100%);
+                    grid-area: 4 / 2 / span 16 / span 18;
+                    .projectImage{
+                        @include widthAndHeight(100%,100%);
+                        object-fit: contain;
+                        transition: transform 1s;
+                    }
+                    .projectImage:hover{
+                        transform: scale(1.02)
+                    }
+                }
+                .projectTitle{
+                    @include flex(center,center);
+                    grid-area: 1 / 3 / span 3 / span 16;
+                    font-size: 2.5rem;
+                    color:blueviolet;
+                }
+                .githubLink{
+                    grid-area: 2 / 18 / span 1 / span 2;
+                    @include flex(center,center);
+                    transition: transform 0.5s;
+                    border: 1px solid black;
+                    border-radius: 10px;
+                    font-size: 1.2rem;
+                }
+                .githubLink:hover{
+                    transform: scale(1.05);
+                    box-shadow: 2px 4px 5px rgba(0, 0, 0, 0.5);
+                }
+            }
+
+        }
+    }
+}

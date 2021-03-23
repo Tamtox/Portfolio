@@ -1,0 +1,51 @@
+@import 'mixins';
+#title{
+    @include widthAndHeight(100%,100vh);
+	@include grid(100%, 95% 5%);
+	font-family: 'Playfair Display', serif;
+	#titleContent{
+		@include widthAndHeight(50%,40%);
+		@include grid(repeat(5,20%),45% 10% 45%);
+		font-size: 6rem;
+		margin:auto;
+		color: whitesmoke;
+		#firstName{
+			@include flex(center,center);		
+			letter-spacing: 0.3vw;
+			animation: 1.5s ease-in-out 0s 1 slideInFromLeft;
+			border-radius: 3px;
+			background-color: rgb(102, 117, 253);
+			grid-area: 1 / 1 / span 1 /span 4;
+			box-shadow: 5px 10px 10px rgba(0, 0, 0, 0.5);
+		}
+		#lastName{
+			@include flex(center,center);
+			letter-spacing: 0.3vw;
+			animation: 1.5s ease-in-out 0s 1 slideInFromRight;
+			border-radius: 3px;
+			background-color: blueviolet ;
+			grid-area: 3 / 2 / span 1 /span 4;
+			box-shadow: 5px 10px 10px rgba(0, 0, 0, 0.5);
+		}
+		@keyframes slideInFromLeft {
+			0% {
+				transform: translateX(-100vw);
+				opacity: 0%;
+			}
+			100% {
+				transform: translateX(0);
+				opacity: 100%;
+			}
+		}
+		@keyframes slideInFromRight {
+			0% {
+				transform: translateX(100vw);
+				opacity: 0%;
+			}
+			100% {
+				transform: translateX(0);
+				opacity: 100%;
+			}
+		}
+	}
+}

@@ -1,23 +1,30 @@
-import logo from './logo.svg';
-import './App.css';
-
+import './Styles/App.scss';
+import React,{useState} from 'react';
+import Navigation from './Components/Navigation';
+import Title from './Components/Title';
+import Personal from './Components/Personal';
+import Skills from './Components/Skills';
+import Projects from './Components/Projects';
+import Contact from './Components/Contact';
 function App() {
+  // Toggle Language
+  let [lang, setLang] = useState("EN")
+  function toggleLanguage() {
+    if(lang === "EN") {
+      setLang("RU")
+    }
+    else{
+      setLang("EN")
+    }
+  }
   return (
     <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+      <Navigation language={lang} toggleLanguage={toggleLanguage} />
+      <Title language={lang} />
+      <Personal language={lang} />
+      <Skills language={lang} />
+      <Projects language={lang} />
+      <Contact language={lang} />
     </div>
   );
 }

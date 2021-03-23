@@ -1,0 +1,38 @@
+@import 'mixins';
+#contact{
+    @include widthAndHeight(100%,7vh);
+    font-family: 'Quicksand', sans-serif;
+    #contactsContent{
+        @include widthAndHeight(100%, 100%);
+        @include grid(repeat(20,5%), 15% 70% 15%);
+        #email{
+            grid-area: 2 / 10 / span 1 / span 2;
+        }
+        #github{
+            grid-area: 2 / 6 / span 1 / span 2;
+        }
+        #codewars{
+            grid-area: 2 / 14 / span 1 / span 2;
+        }
+        .contactLink{
+            @include widthAndHeight(100%, 100%);
+            @include grid(60% 40%, 100%);
+            justify-items: center;
+            align-items:center;
+        }
+        .linkContainer{
+            @include widthAndHeight(100%, 100%);
+            @include flex(center,center);
+            color:white;
+            font-weight: bold;
+        }
+        .linkLabel{
+            font-size: 1.5rem;
+        }
+        .linkIcon{
+            object-fit: contain;
+            font-size: 2rem;  
+        }
+
+    }
+}

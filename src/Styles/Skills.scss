@@ -1,0 +1,87 @@
+@import 'mixins';
+#skills{
+    @include widthAndHeight(100%,100vh);
+    @include flex(center,center);
+    font-family: 'Quicksand', sans-serif;
+    #skillsContent{
+        @include widthAndHeight(90%,80%);
+        #skillsTitle{
+            @include widthAndHeight(100%,10%);
+            @include flex(center,center);
+            font-size: 3.5rem;
+        }
+        #technologies{
+            @include widthAndHeight(100%,90%);
+            display: grid;
+            grid-template-columns: repeat(5,20%);
+            justify-items: center;
+            grid-auto-rows: 40%;
+            row-gap: 15%;
+            padding: 3% 1% 3% 1%;
+            scrollbar-width: none;
+            #htmlIcon {
+                color: rgb(231, 123, 0);
+            }
+            #cssIcon {
+                color: rgb(0, 146, 231);
+            }
+            #jsIcon {
+                color: rgb(248, 233, 17);
+            }
+            #bootstrapIcon{
+                color: blueviolet ;
+            }
+            #sassIcon{
+                color: rgb(231, 0, 0);
+            }
+            #reactIcon {
+                color: rgb(0, 146, 231);
+            }
+            #gitIcon {
+                color: rgb(236, 126, 0);
+            }
+            #npmIcon {
+                color: rgb(189, 0, 0);
+            }
+            .skillsElement{
+                @include widthAndHeight(70%, 80%);
+                animation: 0.8s ease-in-out 0s 1 fadeInTop;
+                .icon {
+                    @include widthAndHeight(100%, 100%);
+                    @include flex(center,center);
+                    filter:drop-shadow(5px 10px 1px rgba(0, 0, 0, 0.4));
+                    animation: floatIcon 5s ease-in-out infinite;
+                }
+                .skillsText{
+                    @include flex(center,center);
+                    transform: translateY(2vh);
+                    font-size: 1.5rem;
+                }
+            }
+            @keyframes floatIcon {
+                0% {
+                    filter:drop-shadow(5px 10px 1px rgba(0, 0, 0, 0.4));
+                    transform: translatey(0px);
+                }
+                50% {
+                    filter:drop-shadow(5px 10px 3px rgba(0, 0, 0, 0.2));
+                    transform: translatey(-5px);
+                }
+                100% {
+                    filter:drop-shadow(5px 10px 1px rgba(0, 0, 0, 0.4));
+                    transform: translatey(0px);
+                }
+            }
+            @keyframes fadeInTop {
+                0% {
+                    transform: translateY(-5vh);
+                    opacity: 0%;
+                }
+                100% {
+                    transform: translateX(0);
+                    opacity: 100%;
+                }
+            }
+        }
+    }
+}

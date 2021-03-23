@@ -1,0 +1,42 @@
+@import 'mixins';
+#navigation{
+    @include widthAndHeight(100%,7vh);
+    position: fixed;
+    @include grid(repeat(20,5%), 100%);
+    align-items: center;
+    box-shadow: 0 0 5px black;
+    padding: 0 0 0 1%;
+    background-color: white;
+    font-family: 'Inconsolata', monospace;
+    font-size: 1.2rem;
+    z-index: 100;
+    #toggleNav{
+        @include widthAndHeight(100%,80%);
+        @include flex(center,center);
+        grid-area: 1 / 1 / span 2 / span 2;
+        font-size: 1.5rem;
+    }
+    @keyframes fadeIn {
+        0% {
+            transform: translateX(-15%);
+            opacity: 0%;
+        }
+        100% {
+            transform: translateX(0);
+            opacity: 100%;
+        }
+    }
+    #navLinks{
+        animation: 0.5s ease-in-out 0s 1 fadeIn;
+        @include widthAndHeight(100%,80%);
+        @include flex(space-between,center);
+        grid-area: 1 / 4 / span 2 / span 5;
+        font-size: 1.2rem;
+    }
+    #langToggle{
+        @include widthAndHeight(55%,80%);
+        @include flex(center,center);
+        grid-area: 1 / 20 / span 2 / span 1;
+        font-size: 1.4rem;
+    }
+}

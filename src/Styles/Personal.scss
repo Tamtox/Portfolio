@@ -1,0 +1,40 @@
+@import 'mixins';
+#personal{
+    @include widthAndHeight(100%,100vh);
+    @include flex(center,center);
+    background-color: rgb(102, 117, 253);
+    font-family: 'Quicksand', sans-serif;
+    #personalContent{
+        @include widthAndHeight(70%,70%);
+        @include grid(100%, 25% 75%);
+        background-color: rgb(246, 246, 246);
+        padding: 2% 5% 5% 5%;
+        border-radius: 5px;
+        box-shadow: 5px 10px 10px rgba(0, 0, 0, 0.5);
+        animation: float 5s ease-in-out infinite;  
+        overflow: scroll;
+        scrollbar-width: none;
+        #personalTitle{
+            @include flex(center,center);
+            font-size: 3.5rem;
+        }
+        #personalText{
+            font-size: 2.2rem;
+            align-self: center;
+        }
+    }
+    @keyframes float {
+        0% {
+            box-shadow: 5px 10px 10px rgba(0, 0, 0, 0.5);
+            transform: translatey(0px);
+        }
+        50% {
+            box-shadow: 5px 10px 15px rgba(0, 0, 0, 0.2);
+            transform: translatey(-10px);
+        }
+        100% {
+            box-shadow: 5px 10px 10px rgba(0, 0, 0, 0.5);
+            transform: translatey(0px);
+        }
+    }
+}
