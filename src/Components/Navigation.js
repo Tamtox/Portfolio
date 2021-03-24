@@ -7,23 +7,24 @@ function Navigation({toggleLanguage,language}) {
         setToggle(!toggle)
     }
     const mode = {
-        EN:['About Me','Skills','Projects','Contacts','Navigation'],
-        RU:['Обо Мне','Навыки','Проекты','Контакты','Навигация']
+        EN:['Title','About Me','Skills','Projects','Contacts','Navigation'],
+        RU:['Главная','Обо Мне','Навыки','Проекты','Контакты','Навигация']
     }
     let navlinks = null;
     if(toggle) {
         navlinks = (
             <div id="navLinks">
-                <a href="#personal">{mode[language][0]}</a>
-                <a href="#skills">{mode[language][1]}</a>
-                <a href="#projects">{mode[language][2]}</a>
-                <a href="#contact">{mode[language][3]}</a>
+                <a href="#title">{mode[language][0]}</a>
+                <a href="#personal">{mode[language][1]}</a>
+                <a href="#skills">{mode[language][2]}</a>
+                <a href="#projects">{mode[language][3]}</a>
+                <a href="#contact">{mode[language][4]}</a>
             </div>
         )
     }
     return (
         <div id="navigation" >
-            <div className="button" id='toggleNav' onClick={toggleNav}>{mode[language][4]}</div>
+            <div className="button" id='toggleNav' onClick={toggleNav}>{mode[language][5]}</div>
             {navlinks}
             <div className="button" id="langToggle" onClick={toggleLanguage}>
                 <div >{language}</div>

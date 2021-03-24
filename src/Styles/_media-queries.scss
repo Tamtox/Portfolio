@@ -19,7 +19,7 @@
                 }
                 #navLinks{
                     animation: 0.5s ease-in-out 0s 1 dropDown;
-                    @include grid(100%,repeat(4,25%));
+                    @include grid(100%,repeat(5,20%));
                     @include widthAndHeight(50%,30%);
                     transform: translateY(65%);
                     text-align: center;
@@ -142,7 +142,7 @@
                 }
                 #navLinks{
                     animation: 0.5s ease-in-out 0s 1 dropDown;
-                    @include grid(100%,repeat(4,25%));
+                    @include grid(100%,repeat(5,20%));
                     @include widthAndHeight(40%,30%);
                     transform: translateY(65%);
                     text-align: center;
@@ -253,7 +253,7 @@
                 }
                 #navLinks{
                     grid-area: 1 / 6 / span 2 / span 10;
-                    font-size: 1.2rem;
+                    font-size: 1.1rem;
                 }
                 #langToggle{
                     @include widthAndHeight(60%,80%);

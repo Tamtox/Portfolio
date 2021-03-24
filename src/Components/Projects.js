@@ -1,7 +1,5 @@
 import '../Styles/Projects.scss';
 import React from 'react';
-import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
-import { faGithubSquare} from "@fortawesome/free-brands-svg-icons";
 import { Swiper, SwiperSlide } from 'swiper/react';
 import SwiperCore, { Navigation,Pagination,Scrollbar,A11y } from 'swiper';
 import 'swiper/swiper.scss';
