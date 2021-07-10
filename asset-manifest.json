@@ -1,28 +1,29 @@
 {
   "files": {
-    "main.css": "/Portfolio/static/css/main.b3bb6d8e.chunk.css",
-    "main.js": "/Portfolio/static/js/main.3f6ecac3.chunk.js",
-    "main.js.map": "/Portfolio/static/js/main.3f6ecac3.chunk.js.map",
-    "runtime-main.js": "/Portfolio/static/js/runtime-main.eb6781d5.js",
-    "runtime-main.js.map": "/Portfolio/static/js/runtime-main.eb6781d5.js.map",
-    "static/css/2.5a313248.chunk.css": "/Portfolio/static/css/2.5a313248.chunk.css",
-    "static/js/2.e6a10a9e.chunk.js": "/Portfolio/static/js/2.e6a10a9e.chunk.js",
-    "static/js/2.e6a10a9e.chunk.js.map": "/Portfolio/static/js/2.e6a10a9e.chunk.js.map",
+    "main.css": "/Portfolio/static/css/main.c5d70f23.chunk.css",
+    "main.js": "/Portfolio/static/js/main.4684c2f1.chunk.js",
+    "main.js.map": "/Portfolio/static/js/main.4684c2f1.chunk.js.map",
+    "runtime-main.js": "/Portfolio/static/js/runtime-main.c74a019d.js",
+    "runtime-main.js.map": "/Portfolio/static/js/runtime-main.c74a019d.js.map",
+    "static/css/2.d59c9b0b.chunk.css": "/Portfolio/static/css/2.d59c9b0b.chunk.css",
+    "static/js/2.16057734.chunk.js": "/Portfolio/static/js/2.16057734.chunk.js",
+    "static/js/2.16057734.chunk.js.map": "/Portfolio/static/js/2.16057734.chunk.js.map",
     "index.html": "/Portfolio/index.html",
-    "static/css/2.5a313248.chunk.css.map": "/Portfolio/static/css/2.5a313248.chunk.css.map",
-    "static/css/main.b3bb6d8e.chunk.css.map": "/Portfolio/static/css/main.b3bb6d8e.chunk.css.map",
-    "static/js/2.e6a10a9e.chunk.js.LICENSE.txt": "/Portfolio/static/js/2.e6a10a9e.chunk.js.LICENSE.txt",
+    "static/css/2.d59c9b0b.chunk.css.map": "/Portfolio/static/css/2.d59c9b0b.chunk.css.map",
+    "static/css/main.c5d70f23.chunk.css.map": "/Portfolio/static/css/main.c5d70f23.chunk.css.map",
+    "static/js/2.16057734.chunk.js.LICENSE.txt": "/Portfolio/static/js/2.16057734.chunk.js.LICENSE.txt",
     "static/media/Currency.471fcb60.png": "/Portfolio/static/media/Currency.471fcb60.png",
+    "static/media/Planner.7236920a.png": "/Portfolio/static/media/Planner.7236920a.png",
     "static/media/Shop.d9dbabd5.png": "/Portfolio/static/media/Shop.d9dbabd5.png",
     "static/media/TV-Movie.65aac821.png": "/Portfolio/static/media/TV-Movie.65aac821.png",
     "static/media/Tictactoe.b81b1797.png": "/Portfolio/static/media/Tictactoe.b81b1797.png",
     "static/media/Weather.3f71ce2f.png": "/Portfolio/static/media/Weather.3f71ce2f.png"
   },
   "entrypoints": [
-    "static/js/runtime-main.eb6781d5.js",
-    "static/css/2.5a313248.chunk.css",
-    "static/js/2.e6a10a9e.chunk.js",
-    "static/css/main.b3bb6d8e.chunk.css",
-    "static/js/main.3f6ecac3.chunk.js"
+    "static/js/runtime-main.c74a019d.js",
+    "static/css/2.d59c9b0b.chunk.css",
+    "static/js/2.16057734.chunk.js",
+    "static/css/main.c5d70f23.chunk.css",
+    "static/js/main.4684c2f1.chunk.js"
   ]
 }
