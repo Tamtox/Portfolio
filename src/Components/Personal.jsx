@@ -12,7 +12,7 @@ function Personal({language}) {
     }
     return (
         <section id="personal">
-            <div id="personalContent">
+            <div id="personalContent" className='float'>
                 <div style={personalFont} id="personalTitle">{mode[language][0]}</div>
                 <div style={personalFont} id="personalText">{mode[language][1]}</div>
             </div>

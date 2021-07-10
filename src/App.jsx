@@ -5,7 +5,6 @@ import Title from './Components/Title';
 import Personal from './Components/Personal';
 import Skills from './Components/Skills';
 import Projects from './Components/Projects';
-import Contact from './Components/Contact';
 function App() {
   // Toggle Language
   let [lang, setLang] = useState("EN")
@@ -24,7 +23,6 @@ function App() {
       <Personal language={lang} />
       <Skills language={lang} />
       <Projects language={lang} />
-      <Contact language={lang} />
     </div>
   );
 }

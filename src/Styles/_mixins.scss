@@ -3,7 +3,7 @@
     justify-content: $justify-content;
     align-items:$align-items;
 }
-@mixin grid($columns,$rows) {
+@mixin grid($rows,$columns) {
     display: grid;
     grid-template: $rows / $columns;
 }

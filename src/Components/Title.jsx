@@ -6,11 +6,8 @@ function Title({language}) {
     }
     return (
         <section id="title">
-            <div id="titleContent">
-                <div id="firstName">{mode[language][0]}</div>
-                <div></div>
-                <div id="lastName">{mode[language][1]}</div>
-            </div>
+            <div id="firstName" className='slideInFromLeft titleNameCard'>{mode[language][0]}</div>
+            <div id="lastName" className='slideInFromRight titleNameCard'>{mode[language][1]}</div>
         </section>
     );
 }

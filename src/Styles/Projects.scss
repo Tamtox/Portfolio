@@ -31,7 +31,7 @@
                         transition: transform 1s;
                     }
                     .projectImage:hover{
-                        transform: scale(1.02)
+                        transform: scale(1.01);
                     }
                 }
                 .projectTitle{
@@ -40,20 +40,7 @@
                     font-size: 2.5rem;
                     color:blueviolet;
                 }
-                .githubLink{
-                    grid-area: 2 / 18 / span 1 / span 2;
-                    @include flex(center,center);
-                    transition: transform 0.5s;
-                    border: 1px solid black;
-                    border-radius: 10px;
-                    font-size: 1.2rem;
-                }
-                .githubLink:hover{
-                    transform: scale(1.05);
-                    box-shadow: 2px 4px 5px rgba(0, 0, 0, 0.5);
-                }
             }
-
         }
     }
 }
