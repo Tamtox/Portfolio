@@ -22,7 +22,7 @@
 		text-align: center;	
 		letter-spacing: 0.3vw;
 		border-radius: 3px;
-		font-size: 5rem;
+		font-size: 6rem;
 		box-shadow: 5px 10px 10px rgba(0, 0, 0, 0.5);
 	}
 }
@@ -35,6 +35,9 @@
 		#lastName{
 			background-color: blueviolet ;
 			margin-left: 0;
+		}
+		.titleNameCard{
+			font-size: 5rem;
 		}
 	}
 }

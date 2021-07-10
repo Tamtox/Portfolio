@@ -1,7 +1,7 @@
 import React,{useState} from 'react';
 import '../Styles/Navigation.scss';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
-import { faChevronCircleDown,faEnvelopeSquare } from '@fortawesome/free-solid-svg-icons';
+import { faChevronCircleRight,faEnvelopeSquare } from '@fortawesome/free-solid-svg-icons';
 import { faGithubSquare } from '@fortawesome/free-brands-svg-icons';
 import { Icon} from '@iconify/react';
 import codewarsIcon from '@iconify-icons/simple-icons/codewars';
@@ -29,7 +29,7 @@ function Navigation({toggleLanguage,language}) {
                     <Icon className="linkIcon" icon={codewarsIcon} />
                     </a>
                 </div>
-            <FontAwesomeIcon className={`navIcon ${toggle?'open':'close'}`} onClick={()=>setToggle(!toggle)} icon={faChevronCircleDown} />
+            <FontAwesomeIcon className={`navIcon ${toggle?'open':'close'}`} onClick={()=>setToggle(!toggle)} icon={faChevronCircleRight} />
         </div>
     );
 }
